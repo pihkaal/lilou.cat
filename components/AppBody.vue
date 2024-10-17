@@ -8,7 +8,11 @@
     >
       ✨ Lilou ✨
     </h1>
-    <img class="w-full max-w-[50vh]" src="https://lilou.cat/api" alt="Lilou" />
+    <img
+      class="w-full max-w-[50vh] rotate-90"
+      src="https://lilou.cat/api"
+      alt="Lilou"
+    >
     <h1
       class="text-4xl md:text-5xl lg:text-6xl font-serif text-white dark:text-white"
     >
