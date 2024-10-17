@@ -9,11 +9,17 @@
     >
       ✨ Lilou ✨
     </h1>
-    <RandomImage />
+    <img
+      class="w-full max-w-[50vh]"
+      src="http://localhost:3000/api"
+      alt="Lilou"
+    />
     <h1
       class="text-4xl md:text-5xl lg:text-6xl font-serif text-white dark:text-white"
     >
       ✨ Lilou ✨
     </h1>
+
+    <Glitters />
   </main>
 </template>
