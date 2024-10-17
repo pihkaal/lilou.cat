@@ -2,7 +2,7 @@
 useSeoMeta({
   title: "Lilou Chat",
   description: "Just ✨ Lilou ✨",
-  themeColor: "fa86c4",
+  themeColor: "#fa86c4",
 });
 </script>
 
