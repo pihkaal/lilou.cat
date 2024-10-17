@@ -1,0 +1,16 @@
+services:
+  lilou-cat:
+    image: pihkaal/lilou-cat:latest
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.lilou-cat.rule=Host(`lilou.cat`)"
+      - "traefik.http.routers.lilou-cat.service=lilou-cat"
+      - "traefik.http.services.lilou-cat.loadbalancer.server.port=3000"
+      - "traefik.http.routers.lilou-cat.tls=true"
+      - "traefik.http.routers.lilou-cat.tls.certResolver=myresolver"
+
+networks:
+  web:
+    external: true
