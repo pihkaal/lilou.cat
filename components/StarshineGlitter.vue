@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const STARS = 1000;
+const STARS = 500;
 
 const MIN_SPARKLE = 2;
 const MAX_SPARKLE = 20;
@@ -23,7 +23,7 @@ const createStar = (container: HTMLElement) => {
   container.appendChild(star);
 };
 
-const generateStars = (container: HTMLElement | null) => {
+const generateStars = (container: HTMLElement) => {
   for (let i = 0; i < STARS; i++) {
     createStar(container);
   }
