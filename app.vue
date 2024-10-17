@@ -7,7 +7,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="h-screen">
+  <div class="h-[100svh]">
     <AppBody />
     <StarshineGlitter />
   </div>
