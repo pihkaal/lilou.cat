@@ -12,3 +12,9 @@ useSeoMeta({
     <StarshineGlitter />
   </div>
 </template>
+
+<style>
+body {
+  color: #fa86c4;
+}
+</style>
