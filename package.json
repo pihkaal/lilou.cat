@@ -12,9 +12,13 @@
   },
   "dependencies": {
     "@nuxt/eslint": "^0.6.0",
+    "@nuxtjs/tailwindcss": "^6.12.2",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"
   },
-  "packageManager": "pnpm@9.11.0"
+  "packageManager": "pnpm@9.11.0",
+  "devDependencies": {
+    "typescript": "5.5.4"
+  }
 }
