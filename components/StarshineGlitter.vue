@@ -1,8 +1,8 @@
 <script setup lang="ts">
-const STARS = 500;
+const STARS = 250;
 
 const MIN_SPARKLE = 2;
-const MAX_SPARKLE = 20;
+const MAX_SPARKLE = 15;
 
 const MIN_SIZE = 15;
 const MAX_SIZE = 30;
@@ -39,7 +39,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="container" class="fixed inset-0" />
+  <div ref="container" class="fixed inset-0 -z-10" />
 </template>
 
 <style>
@@ -53,7 +53,6 @@ onMounted(() => {
   background-position: center;
   background-size: 100% 100%;
   overflow: hidden;
-  z-index: 2;
   color: tansparent;
   opacity: 0;
   animation: glitter 6s linear 0s infinite normal;

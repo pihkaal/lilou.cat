@@ -1,6 +1,6 @@
 <template>
   <main
-    class="h-full items-center p-5 justify-center flex flex-col space-y-4 bg-[#fa86c4]"
+    class="h-full items-center relative p-5 justify-center flex flex-col space-y-4 bg-[#fa86c4] z-10"
   >
     <NuxtRouteAnnouncer />
     <h1
@@ -19,7 +19,7 @@
       ✨ Lilou ✨
     </h1>
 
-    <div class="fixed inset-0">
+    <div class="absolute inset-0">
       <StarshineGlitter />
     </div>
   </main>
