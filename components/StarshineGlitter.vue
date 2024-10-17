@@ -4,8 +4,8 @@ const STARS = 250;
 const MIN_SPARKLE = 2;
 const MAX_SPARKLE = 15;
 
-const MIN_SIZE = 15;
-const MAX_SIZE = 30;
+const MIN_SIZE = 25;
+const MAX_SIZE = 35;
 
 const random = (min: number, max: number) => Math.random() * (max - min) + min;
 
