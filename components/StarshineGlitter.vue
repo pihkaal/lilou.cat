@@ -18,7 +18,7 @@ const createStar = (container: HTMLElement) => {
   star.style.width = size;
   star.style.height = size;
   star.style.animationDuration = `${random(MIN_SPARKLE, MAX_SPARKLE)}s`;
-  star.style.animationDelay = `${random(0, MAX_SPARKLE)}s`;
+  star.style.animationDelay = `${random(0, MAX_SPARKLE * 200)}ms`;
 
   container.appendChild(star);
 };
