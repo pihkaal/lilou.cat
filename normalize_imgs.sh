@@ -6,8 +6,9 @@
 IMG_SZ=1024
 
 for file in public/lilou/*.jpg; do
-  hash=$(md5sum "$file" | awk '{print $1}')
-  cwebp "$file" -resize $IMG_SZ $IMG_SZ -o "./public/lilou/${hash}.webp"
-  rm "$file"
+   hash=$(md5sum "$file" | awk '{print $1}')
+   out="./public/lilou/${hash}.webp"
+   cwebp "$file" -resize $IMG_SZ $IMG_SZ -o "$out"
+   magick "$out" -rotate 90 "$out"
+   rm "$file"
 done
-
