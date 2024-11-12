@@ -1,6 +1,8 @@
 services:
   lilou-cat:
     image: pihkaal/lilou-cat:latest
+    environment:
+      - API_KEY
     networks:
       - web
     labels:
