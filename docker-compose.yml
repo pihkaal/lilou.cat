@@ -12,6 +12,7 @@ services:
       - "traefik.http.services.lilou-cat.loadbalancer.server.port=3000"
       - "traefik.http.routers.lilou-cat.tls=true"
       - "traefik.http.routers.lilou-cat.tls.certResolver=myresolver"
+    restart: always
 
 networks:
   web:
